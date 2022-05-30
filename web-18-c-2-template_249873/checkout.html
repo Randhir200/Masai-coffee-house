@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
   </head>
-
+  <style>
+    form {
+      width: 60%;
+      margin: 50px auto;
+    }
+    #confirm {
+      background-color: white;
+      border: 1px solid lightgreen;
+      color: green;
+      border-radius: 8px;
+      padding: 5px 15px;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+    #confirm:hover {
+      background-color: lightgreen;
+    }
+    input {
+      padding: 3px;
+      border-radius: 6px;
+    }
+  </style>
   <body>
     <div id="order-form">
       <!--Add your form html element here-->
       <!--In form, give #name,#number and #address as HTML id's to relevant input elements -->
       <!-- confirm button with id "confirm" -->
+      <form>
+        <input type="text" id="name" />
+        <input type="number" id="number" />
+        <input type="text" id="address" />
+        <button id="confirm">Confirm</button>
+      </form>
     </div>
   </body>
+  <script src="./scripts/checkout.js"></script>
 </html>
